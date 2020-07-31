@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dux-V4-NoM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Return Money View Controller-->
+        <scene sceneID="QeV-ph-fxe">
+            <objects>
+                <viewController id="dux-V4-NoM" customClass="ReturnMoneyViewController" customModule="ReturnMoney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBa-yI-pMD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u4T-vc-fDA">
+                                <rect key="frame" x="0.0" y="285" width="414" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89D-sZ-vwi">
+                                <rect key="frame" x="40" y="97" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trO-Xc-7XX">
+                                <rect key="frame" x="40" y="161" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79o-Af-0fe">
+                                <rect key="frame" x="40" y="225" width="334" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c8e-1J-sU0" firstAttribute="trailing" secondItem="89D-sZ-vwi" secondAttribute="trailing" constant="40" id="23D-K3-oqM"/>
+                            <constraint firstItem="u4T-vc-fDA" firstAttribute="top" secondItem="79o-Af-0fe" secondAttribute="bottom" constant="30" id="Fyw-we-krN"/>
+                            <constraint firstItem="c8e-1J-sU0" firstAttribute="bottom" secondItem="u4T-vc-fDA" secondAttribute="bottom" id="KeQ-fh-xgt"/>
+                            <constraint firstItem="c8e-1J-sU0" firstAttribute="trailing" secondItem="trO-Xc-7XX" secondAttribute="trailing" constant="40" id="L4h-wP-fa7"/>
+                            <constraint firstItem="trO-Xc-7XX" firstAttribute="top" secondItem="89D-sZ-vwi" secondAttribute="bottom" constant="30" id="Phb-vV-dUj"/>
+                            <constraint firstItem="c8e-1J-sU0" firstAttribute="trailing" secondItem="79o-Af-0fe" secondAttribute="trailing" constant="40" id="Rjw-lm-cae"/>
+                            <constraint firstItem="79o-Af-0fe" firstAttribute="leading" secondItem="c8e-1J-sU0" secondAttribute="leading" constant="40" id="Y7h-mG-wv5"/>
+                            <constraint firstItem="trO-Xc-7XX" firstAttribute="leading" secondItem="c8e-1J-sU0" secondAttribute="leading" constant="40" id="YD6-EI-MYJ"/>
+                            <constraint firstItem="u4T-vc-fDA" firstAttribute="leading" secondItem="c8e-1J-sU0" secondAttribute="leading" id="i8R-K2-nZE"/>
+                            <constraint firstItem="89D-sZ-vwi" firstAttribute="leading" secondItem="c8e-1J-sU0" secondAttribute="leading" constant="40" id="sRJ-0f-yul"/>
+                            <constraint firstItem="89D-sZ-vwi" firstAttribute="top" secondItem="c8e-1J-sU0" secondAttribute="top" constant="53" id="yOP-x2-cS8"/>
+                            <constraint firstItem="c8e-1J-sU0" firstAttribute="trailing" secondItem="u4T-vc-fDA" secondAttribute="trailing" id="zdx-Rg-kit"/>
+                            <constraint firstItem="79o-Af-0fe" firstAttribute="top" secondItem="trO-Xc-7XX" secondAttribute="bottom" constant="30" id="zs3-WD-mU6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c8e-1J-sU0"/>
+                    </view>
+                    <connections>
+                        <outlet property="calculateMoneyButton" destination="79o-Af-0fe" id="HuD-Kq-1e9"/>
+                        <outlet property="productPrizeTextField" destination="trO-Xc-7XX" id="wxo-Xg-hVu"/>
+                        <outlet property="receiveMoneyTextField" destination="89D-sZ-vwi" id="wIh-tH-7nt"/>
+                        <outlet property="tableView" destination="u4T-vc-fDA" id="732-0n-yg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yoA-x4-lkC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="1240"/>
+        </scene>
+    </scenes>
+</document>

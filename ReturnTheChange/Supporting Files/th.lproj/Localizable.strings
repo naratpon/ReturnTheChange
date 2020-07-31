@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  ReturnTheChange
+
+  Created by Touch on 31/7/2563 BE.
+  Copyright © 2563 Demo. All rights reserved.
+*/
+
+/* calculate */
+"calculate_receive_title"       = "จำนวนเงินที่รับ";
+"calculate_prize_title"         = "ราคาสินค้า";
+"calculate_title_button"        = "คำนวณ";
+
+/* result */
+"result_title_money"            = "ธนบัตร";
+"result_title_amount"           = "จำนวน";
+
+/* warning  */
+"warning_numbe_only"            = "กรอกตัวเลขได้เท่านั้น";
+"warning_prize_morethan_receive" = "เกิดข้อผิดพลาด ราคาสินค้่ามากกว่าจำนวนเงินที่ได้รับ";

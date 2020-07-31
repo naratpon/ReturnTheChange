@@ -1,0 +1,24 @@
+PODS:
+  - Localize-Swift (3.1.0)
+  - Nimble (8.1.1)
+  - Quick (3.0.0)
+
+DEPENDENCIES:
+  - Localize-Swift
+  - Nimble
+  - Quick
+
+SPEC REPOS:
+  trunk:
+    - Localize-Swift
+    - Nimble
+    - Quick
+
+SPEC CHECKSUMS:
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+
+PODFILE CHECKSUM: 124375c99072387d9ca0597b66635f033b4c9268
+
+COCOAPODS: 1.9.3

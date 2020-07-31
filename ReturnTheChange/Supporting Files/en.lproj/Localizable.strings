@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  ReturnTheChange
+
+  Created by Touch on 31/7/2563 BE.
+  Copyright © 2563 Demo. All rights reserved.
+*/
+
+/* calculate */
+"calculate_receive_title"       = "Money received";
+"calculate_prize_title"         = "Product price";
+"calculate_title_button"        = "Calculate";
+
+/* result */
+"result_title_money"            = "BankNote";
+"result_title_amount"           = "Amount";
+
+/* warning  */
+"warning_numbe_only"            = "Number Only";
+"warning_prize_morethan_receive" = "Something went wrong ,Product price is greater than the amount received";
+
+
